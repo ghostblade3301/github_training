@@ -1,0 +1,15 @@
+name: training
+
+services:
+
+  nginx:
+    image: nginx:1.25
+    ports:
+      - "80:80"
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://127.0.0.1/ || exit 1"]
+      interval: 1m30s
+      timeout: 30s
+      retries: 5
+      start_period: 30s
+
