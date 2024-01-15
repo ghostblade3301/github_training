@@ -6,4 +6,4 @@ from dotenv import load_dotenv
 load_dotenv()
 
 
-print(os.getenv('BOT_TELEGRAM_TOKEN'))
+print('hello world')
